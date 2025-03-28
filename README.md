@@ -30,7 +30,7 @@ O projeto ainda está em desenvolvimento, mas aqui você pode acompanhar cada pa
 
 ## 📄 Documentação
 
-- [FAQ do Projeto] (em breve)  
+- [FAQ do Projeto] https://squirrel-gamess.github.io/yoku-website/  
 *(Dúvidas frequentes, progresso detalhado e curiosidades)*
 
 ---
