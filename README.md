@@ -6,6 +6,7 @@
 
 ## 📸 Imagem do projeto
 ![Screenshot](assets/preview.gif)
+#em breve
 
 ---
 
