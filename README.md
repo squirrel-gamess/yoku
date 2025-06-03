@@ -4,34 +4,37 @@
 
 ---
 
+## 📸 Imagem do projeto
+![Screenshot](assets/preview.gif)
+
+---
+
 ## 🧠 Sobre o projeto
 
-Esse é um jogo narrativo com elementos de exploração, mistério e escolhas morais, ambientado em uma sociedade animal antropomorfizada — onde o instinto e a razão colidem em situações **perturbadoras**.
+Este é um jogo narrativo com exploração, mistério e escolhas morais, ambientado em uma sociedade animal antropomorfizada — onde instinto e razão colidem em situações **perturbadoras**.
 
-O projeto ainda está em desenvolvimento, mas aqui você pode acompanhar cada passo do processo!
+O projeto ainda está em desenvolvimento, mas aqui você pode acompanhar cada passo!
 
 ---
 
 ## 🚧 Status atual
 
-- **Pre-alpha** : **36,5%** feito  
-  - casa (interior) ✅  
-  - casa (exterior) ✅  
-  - outside ✅  
-  - cidade 🏙️ 40%  
-  - interação com NPCs 🐿️ 5%  
-  - história 📜 13%
+- [x] Casa (interior)
+- [x] Casa (exterior)
+- [x] Outside
+- [ ] Cidade (40%)
+- [ ] Interação com NPCs (5%)
+- [ ] História (13%)
 
-~~Alpha : 0%~~  
-~~Beta : 0%~~  
-~~Stable : 0%~~
+Alpha: 0%  
+Beta: 0%  
+Stable: 0%
 
 ---
 
 ## 📄 Documentação
 
-- [FAQ do Projeto] https://squirrel-gamess.github.io/yoku-website/  
-*(Dúvidas frequentes, progresso detalhado e curiosidades)*
+- [FAQ do Projeto](https://squirrel-gamess.github.io/yoku-website/)
 
 ---
 
@@ -43,29 +46,34 @@ O projeto ainda está em desenvolvimento, mas aqui você pode acompanhar cada pa
 
 ## 🧪 Aviso
 
-Este jogo aborda temas **sensíveis e adultos**. Não recomendado para jogadores que buscam uma experiência leve ou puramente casual.
+Este jogo aborda temas **sensíveis e adultos**. Não recomendado para quem busca uma experiência leve ou puramente casual.
 
 ---
 
 ## 🔧 Tecnologias usadas
 
-- Engine: [Vscode]
-- Linguagem: [Java]
-- Gráficos: [Pixel art]
+- Engine: [Korge](https://korge.org/)
+- Linguagem: [Kotlin](https://kotlinlang.org/)
+- Gráficos: Pixel art
 
 ---
 
 ## 🐾 Contribua
 
-Quer ajudar com ideias, arte, roteiro ou programação?  
-Sinta-se livre para abrir uma issue ou fazer um pull request!
+Gosta do projeto ou tem ideias?  
+Fique à vontade para abrir uma **issue**, enviar um **pull request** ou participar das discussões!
 
 ---
 
 ## 📫 Contato
 
-Tem dúvidas, sugestões ou quer só conversar sobre o projeto?  
-Entre em contato: [julio123gmeeel@gmail.com] ou [padoquinhauwu] (discord)
+Dúvidas, sugestões ou só quer conversar sobre o projeto?  
+Email: julio123gmeeel@gmail.com  
+Discord: padoquinhauwu
 
 ---
- 
+
+## ⚖️ Licença
+
+Este projeto está sob a licença [GNU GPL v3](LICENSE).  
+Leia o arquivo LICENSE para mais detalhes.
