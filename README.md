@@ -20,12 +20,12 @@ O projeto ainda está em desenvolvimento, mas aqui você pode acompanhar cada pa
 
 ## 🚧 Status atual
 
-- [x] Casa (interior) (10%) (em desenvolvimento)
-- [ ] Casa (exterior)
-- [ ] Outside
-- [ ] Cidade (0%)
-- [ ] Interação com NPCs (0%)
-- [ ] História (13%)
+- [x] Casa (interior) (em desenvolvimento)
+- [ ] Casa (exterior) (TODO)
+- [ ] Outside (TODO)
+- [ ] Cidade (TODO)
+- [ ] Interação com NPCs (TODO)
+- [ ] História (em desenvolvimento)
 
 Alpha: 0%  
 Beta: 0%  
