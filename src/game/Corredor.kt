@@ -5,6 +5,10 @@ import korlibs.korge.view.SContainer
 import korlibs.korge.view.addUpdater
 import korlibs.math.geom.Point
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 // Adicione um construtor primário para a classe Corredor
 class Corredor() : Scene() {
 	override suspend fun SContainer.sceneMain() {
@@ -18,9 +22,17 @@ class Corredor() : Scene() {
 		// Use sceneContainer em vez de this para obter a referência correta
 		val sceneContainer = sceneContainer
 		val porta = Door(sceneContainer, "quarto", Point(150, 300), protagonist)
+<<<<<<< Updated upstream
 
 		addUpdater {
 			porta.update()
+=======
+		val porta2 = Door(sceneContainer, "cozinha", Point(10, 250), protagonist)
+
+		addUpdater {
+			porta.update()
+			porta2.update()
+>>>>>>> Stashed changes
 		}
 
 		val posicao = protagonist.playerPos
