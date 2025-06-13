@@ -20,7 +20,7 @@ O projeto ainda está em desenvolvimento, mas aqui você pode acompanhar cada pa
 
 ## 🚧 Status atual
 
-- [x] Casa (interior) (em desenvolvimento)
+- [x] Casa (interior) (em desenvolvimento) (50% done)
 - [ ] Casa (exterior) (TODO)
 - [ ] Outside (TODO)
 - [ ] Cidade (TODO)
