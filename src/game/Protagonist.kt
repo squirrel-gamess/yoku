@@ -17,6 +17,10 @@ class Protagonist(private val container: Container) {
 
     private lateinit var animationFront: SpriteAnimation
     private lateinit var animationSide: SpriteAnimation
+<<<<<<< Updated upstream
+=======
+    private lateinit var animationBack: SpriteAnimation
+>>>>>>> Stashed changes
     private val frameWidth = 32
     private val frameHeight = 32
 
@@ -25,6 +29,14 @@ class Protagonist(private val container: Container) {
         var y = initialY
 
         val spritemap = resourcesVfs["MainSheet.png"].readBitmap().toBMP32()
+<<<<<<< Updated upstream
+=======
+       animationBack = SpriteAnimation(
+            spritemap, frameWidth, frameHeight, columns = 8, rows = 1,
+           marginLeft = 0, marginTop = 64
+        )
+
+>>>>>>> Stashed changes
         animationFront = SpriteAnimation(
             spritemap, frameWidth, frameHeight, columns = 8, rows = 1
         )
@@ -63,7 +75,11 @@ class Protagonist(private val container: Container) {
             isMoving = true
         }
         if (KeyBinds.up()) {
+<<<<<<< Updated upstream
             image.playAnimationLooped(animationFront, spriteDisplayTime = 0.07.seconds)
+=======
+            image.playAnimationLooped(animationBack, spriteDisplayTime = 0.07.seconds)
+>>>>>>> Stashed changes
             image.position(image.x, image.y - 4)
             isMoving = true
         }

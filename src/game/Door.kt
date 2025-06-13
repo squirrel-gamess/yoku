@@ -25,6 +25,10 @@ class Door(
                 when (targetSceneName) {
                     "quarto" -> sceneContainer.changeTo { Quarto() }
                     "corredor" -> sceneContainer.changeTo { Corredor() }
+<<<<<<< Updated upstream
+=======
+                    "cozinha" -> sceneContainer.changeTo { Cozinha() }
+>>>>>>> Stashed changes
                     else -> sceneContainer.changeTo { Quarto() }
                 }
             }
