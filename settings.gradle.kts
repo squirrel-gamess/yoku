@@ -22,12 +22,4 @@ buildscript {
 
 apply(plugin = "com.soywiz.korge.settings")
 
-rootProject.name = "jogopap"
-
-// Incluir o módulo korge-tiled com o caminho correto
-include(":korge-tiled")
-project(":korge-tiled").projectDir = file("modules/korge-tiled")
-
-// Incluir o módulo deps como parte do projeto
-include(":deps")
-
+rootProject.name = "korge-hello-world"

@@ -1,59 +1,40 @@
 package game
 
-<<<<<<< Updated upstream
-=======
-import korlibs.io.file.std.resourcesVfs
->>>>>>> Stashed changes
-import korlibs.korge.ldtk.view.readLDTKWorld
 import korlibs.korge.ldtk.view.LDTKLevelView
-import korlibs.korge.ldtk.view.LDTKWorld
 import korlibs.korge.view.Container
 import korlibs.korge.view.addTo
-<<<<<<< Updated upstream
-import korlibs.korge.view.position
+import korlibs.io.file.std.resourcesVfs
+import korlibs.korge.ldtk.view.LDTKWorld
+import korlibs.korge.ldtk.view.readLDTKWorld
 
-object MapPath {
-	val file = __KR.KRLdtk.casa.__file // Ou defina o caminho aqui
-	val file1 = __KR.KRLdtk.corredor.__file // Ou defina o caminho aqui
-}
-
-suspend fun loadMap() = MapPath.file.readLDTKWorld()
-suspend fun loadMap1() = MapPath.file1.readLDTKWorld()
-=======
-
-object MapPath {
-	val file = "ldtk/casa.ldtk" // Defina o caminho correto para o arquivo
-	val file1 = "ldtk/corredor.ldtk" // Defina o caminho correto para o arquivo
-	val file2 = "ldtk/cozinha.ldtk" // Defina o caminho correto para o arquivo
-}
-
-suspend fun loadMap() = resourcesVfs[MapPath.file].readLDTKWorld()
-suspend fun loadMap1() = resourcesVfs[MapPath.file1].readLDTKWorld()
-suspend fun loadMap2() = resourcesVfs[MapPath.file2].readLDTKWorld()
->>>>>>> Stashed changes
-
-fun renderMap(container: Container, world: LDTKWorld) {
-	LDTKLevelView(world.levels.first()).addTo(container).apply {
-		scale = 2.0
+object MapLoader {
+	suspend fun loadWorld(mapName: String): LDTKWorld {
+		val file = resourcesVfs["ldtk/$mapName.ldtk"]
+		return file.readLDTKWorld()
 	}
-}
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-fun renderMap1(container: Container, world: LDTKWorld) {
-	LDTKLevelView(world.levels.first()).addTo(container).apply {
-		scale = 4.0
-	}
-<<<<<<< Updated upstream
-}
-=======
-}
+	fun renderLevel(container: Container, world: LDTKWorld, levelName: String = "quarto", scale: Double = 2.0) {
+		// Tente encontrar o nível pelo nome fornecido
+		val level = world.levels.firstOrNull { it.level.identifier == levelName }
+			?: world.levels.firstOrNull() // Se não encontrar, use o primeiro nível disponível
+			?: error("Nenhum nível encontrado no mapa.")
 
-
-fun renderMap2(container: Container, world: LDTKWorld) {
-	LDTKLevelView(world.levels.first()).addTo(container).apply {
-		scale = 3.0
+		LDTKLevelView(level).addTo(container).apply {
+			this.scale = scale
 		}
 	}
->>>>>>> Stashed changes
+}
+
+// Funções helper para carregar e renderizar mapas específicos
+suspend fun loadMap1(): LDTKWorld = MapLoader.loadWorld("corredor")
+fun renderMap1(container: Container, world: LDTKWorld, scale: Double = 4.0) =
+    MapLoader.renderLevel(container, world, "corredor", scale) // Mudando para "Level_0" que é um nome comum para o primeiro nível
+
+suspend fun loadMap2(): LDTKWorld = MapLoader.loadWorld("cozinha")
+fun renderMap2(container: Container, world: LDTKWorld, scale: Double = 3.0) =
+    MapLoader.renderLevel(container, world, "cozinha", scale) // Mudando para "Level_0"
+
+// Helper para mapa 'casa'
+suspend fun loadMap3(): LDTKWorld = MapLoader.loadWorld("casa")
+fun renderMap3(container: Container, world: LDTKWorld, scale: Double = 2.0) =
+    MapLoader.renderLevel(container, world, "Level_0", scale)
