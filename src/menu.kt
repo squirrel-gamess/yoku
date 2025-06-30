@@ -1,4 +1,4 @@
-import game.Quarto
+import game.ambientes.Quarto
 import korlibs.korge.scene.*
 import korlibs.korge.view.*
 import korlibs.image.color.*

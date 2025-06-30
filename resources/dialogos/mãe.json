@@ -1,0 +1,46 @@
+{
+  "mae_intro": [
+    {
+      "personagem": "Mãe",
+      "fala": "Bom dia, filho! Dormiu bem?"
+    },
+    {
+      "personagem": "Protagonista",
+      "fala": "Dormir eu dormi, mas tive um sonho estranho..."
+    },
+    {
+      "personagem": "Mãe",
+      "fala": "Sonho estranho? Me conta enquanto termino o café!",
+      "opcoes": [
+        {
+          "resposta": "Falar a verdade.",
+          "proximo_dialogo": "mae_sonho_verdade"
+        },
+        {
+          "resposta": "Inventar uma mentira.",
+          "proximo_dialogo": "mae_sonho_mentira"
+        }
+      ]
+    }
+  ],
+  "mae_sonho_verdade": [
+    {
+      "personagem": "Protagonista",
+      "fala": "Uma pessoa me perseguia, e queria me comer. Isso me deixou com medo."
+    },
+    {
+      "personagem": "Mãe",
+      "fala": "Sonhos estranhos são normais, filho. Mas não se preocupe, estou aqui para te apoiar."
+    }
+  ],
+  "mae_sonho_mentira": [
+    {
+      "personagem": "Protagonista",
+      "fala": "Não foi nada demais."
+    },
+    {
+      "personagem": "Mãe",
+      "fala": "Ah, que bom! Às vezes é melhor não dar muita atenção a sonhos estranhos."
+    }
+  ]
+}

@@ -1,45 +1,34 @@
 import korlibs.korge.gradle.*
-import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 
 plugins {
-    alias(libs.plugins.korge)
+	alias(libs.plugins.korge)
 }
 
 korge {
-    id = "com.sample.demo"
+	id = "com.sample.demo"
 
 // To enable all targets at once
 
-    //targetAll()
+	//targetAll()
 
 // To enable targets based on properties/environment variables
-    //targetDefault()
+	//targetDefault()
 
 // To selectively enable targets
 
-    targetJvm()
-    targetJs()
+	targetJvm()
+	targetJs()
     targetWasm()
-    targetDesktop()
-    targetIos()
-    targetAndroid()
+	targetDesktop()
+	targetIos()
+	targetAndroid()
 
-    serializationJson()
-
-    // Android está desabilitado ao não chamar targetAndroid()
+	serializationJson()
 }
 
-// Adicionar referência ao módulo local korge-tiled
+
 dependencies {
-    add("commonMainApi", project(":korge-tiled"))
-}
-
-// Configuração para o source set concurrentMain
-afterEvaluate {
-    extensions.findByType<KotlinMultiplatformExtension>()?.let { kotlin ->
-        kotlin.sourceSets.findByName("concurrentMain")?.dependsOn(
-            kotlin.sourceSets.getByName("commonMain")
-        )
-    }
+    add("commonMainApi", project(":deps"))
+    //add("commonMainApi", project(":korge-dragonbones"))
 }
 
