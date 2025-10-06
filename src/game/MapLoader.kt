@@ -28,13 +28,12 @@ object MapLoader {
 // Funções helper para carregar e renderizar mapas específicos
 suspend fun loadMap1(): LDTKWorld = MapLoader.loadWorld("corredor")
 fun renderMap1(container: Container, world: LDTKWorld, scale: Double = 4.0) =
-    MapLoader.renderLevel(container, world, "corredor", scale) // Mudando para "Level_0" que é um nome comum para o primeiro nível
+    MapLoader.renderLevel(container, world, "corredor", scale) // Mudando para "Level_1" que é um nome comum para o primeiro nível
 
 suspend fun loadMap2(): LDTKWorld = MapLoader.loadWorld("cozinha")
 fun renderMap2(container: Container, world: LDTKWorld, scale: Double = 3.0) =
-    MapLoader.renderLevel(container, world, "cozinha", scale) // Mudando para "Level_0"
+    MapLoader.renderLevel(container, world, "cozinha", scale) // Mudando para "Level_2"
 
-// Helper para mapa 'casa'
 suspend fun loadMap3(): LDTKWorld = MapLoader.loadWorld("casa")
 fun renderMap3(container: Container, world: LDTKWorld, scale: Double = 2.0) =
-    MapLoader.renderLevel(container, world, "Level_0", scale)
+    MapLoader.renderLevel(container, world, "Level_0", scale) // Mudando para "Level_3"

@@ -2,14 +2,17 @@
   "mae_intro": [
     {
       "personagem": "Mãe",
+      "sprite": "MaeFala.png",
       "fala": "Bom dia, filho! Dormiu bem?"
     },
     {
       "personagem": "Protagonista",
+      "sprite": "ProtagonistaFala.png",
       "fala": "Dormir eu dormi, mas tive um sonho estranho..."
     },
     {
       "personagem": "Mãe",
+      "sprite": "MaeFala.png",
       "fala": "Sonho estranho? Me conta enquanto termino o café!",
       "opcoes": [
         {
