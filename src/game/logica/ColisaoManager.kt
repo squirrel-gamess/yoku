@@ -8,7 +8,7 @@ import korlibs.math.geom.Rectangle
 import game.personagens.Direcao
 import game.logica.Facing
 
-// Interface padrão para Hitbox para desacoplar da implementação específica de Quarto.Hitbox
+// Interface padrão para Hitbox para desacoplar da implementação específica de BedroomCollision.Hitbox
 interface IHitbox {
     val x: Double
     val y: Double

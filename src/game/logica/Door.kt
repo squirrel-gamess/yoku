@@ -1,16 +1,14 @@
 package game.logica
 
 import game.personagens.Protagonist
-import game.ambientes.Corredor
-import game.ambientes.Cozinha
-import game.ambientes.Quarto
+import game.ambientes.Bedroom.*
+import game.ambientes.Hallway.*
+import game.ambientes.Kitchen.*
 import korlibs.korge.scene.SceneContainer
 import korlibs.math.geom.Point
-import korlibs.math.geom.Rectangle
-import game.logica.ColisaoManager
 import korlibs.io.async.launchImmediately
 
-class Door(
+class   Door(
     private val sceneContainer: SceneContainer,
     private val targetSceneName: String,
     private val position: Point,
@@ -33,10 +31,10 @@ class Door(
             // Usando launchImmediately para chamar funções suspending
             sceneContainer.launchImmediately {
                 when (targetSceneName) {
-                    "quarto" -> sceneContainer.changeTo { Quarto() }
-                    "corredor" -> sceneContainer.changeTo { Corredor() }
-                    "cozinha" -> sceneContainer.changeTo { Cozinha() }
-                    else -> sceneContainer.changeTo { Quarto() }
+                    "quarto" -> sceneContainer.changeTo { BedroomMain() }
+                    "corredor" -> sceneContainer.changeTo { HallwayMain() }
+                    "cozinha" -> sceneContainer.changeTo { KitchenMain() }
+                    else -> sceneContainer.changeTo { BedroomMain() }
                 }
             }
         }

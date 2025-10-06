@@ -8,7 +8,7 @@ import korlibs.math.geom.Point
 import korlibs.time.seconds
 
 class Protagonist(private val container: Container) {
-    private lateinit var image: Sprite
+    lateinit var image: Sprite
 
     // Dimensões de cada frame na spritesheet
     private val frameWidth = 32
